@@ -20,7 +20,7 @@ function App() {
       const token = localStorage.getItem("token");
       const option = {
         method: "get",
-        url: "/api/auth",
+        url: "https://mighty-dusk-05196.herokuapp.com/api/auth",
         headers: {
           Authorization: `Bearer ${token}`
         }

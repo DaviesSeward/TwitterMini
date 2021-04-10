@@ -12,7 +12,7 @@ const Posts = () => {
 
     const getAllPosts = useCallback(async () => {
         try {
-            const option = { method: "get", url: "/api/posts" }
+            const option = { method: "get", url: "https://mighty-dusk-05196.herokuapp.com/api/posts" }
             const response = await axios(option);
             const posts = response.data.data.posts;
             dispatch({ type: "GET_ALL_POSTS", payload: posts });
