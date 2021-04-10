@@ -1,0 +1,15 @@
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+{
+    "email" : "thanh@gmail.com",
+    "password" : "123456"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+
+###
+GET http://localhost:5000/api/auth/
+Content-Type: application/json
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDZjYTY0MjdmMjdhODA0OGMxNTQxOGMiLCJpYXQiOjE2MTgwMzMxMjR9.9WfmVGGexp1vKWvZA5mf9OeL1DOZNglPny4ycoE12fQ
