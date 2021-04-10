@@ -13,3 +13,7 @@ GET http://localhost:5000/api/posts
 GET http://localhost:5000/api/auth/
 Content-Type: application/json
 Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDZjYTY0MjdmMjdhODA0OGMxNTQxOGMiLCJpYXQiOjE2MTgwMzMxMjR9.9WfmVGGexp1vKWvZA5mf9OeL1DOZNglPny4ycoE12fQ
+
+###
+
+GET https://mighty-dusk-05196.herokuapp.com/api/posts

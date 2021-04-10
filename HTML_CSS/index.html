@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="auth.css">
+    <title>Twitter</title>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="logo"><a href="#">Twitter</a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><span class="user-name">Hello Thanh</span></li>
+                    <li><a href="#">Sign out</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- FORM -->
+        <section class="forn-section">
+            <form class="form">
+                <textarea name="content" id="content" class="content" placeholder="What's happening?"></textarea>
+                <button class="btn" type="submit">Tweet</button>            
+            </form>
+        </section>
+
+        <!-- POST -->
+        <section class="post-section">
+            <div class="post-list">
+                <div class="post-item">
+                    <p class="post-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati 
+                        asperiores vero suscipit deserunt minima officiis, nemo, voluptatum 
+                        iure illum eligendi odio odit possimus recusandae enim. Tempora deserunt 
+                        a, laudantium obcaecati nemo quaerat impedit ea in cum, necessitatibus 
+                        aliquam vel dolore.
+                    </p>
+                    <div class="post-footer">
+                        <div class="post-infors">
+                            <span>by Thanh</span>
+                            <span>Date: 01/04/2021</span>
+                        </div>
+                        <div class="post-edit-delete">
+                            <span>Edit</span>
+                            <span>Delete</span>
+                            <span class="delete-question">
+                                Are you sure?
+                            </span>
+                            <span>Yes</span>
+                            <span>No</span>
+                        </div>
+                    </div>
+                    <form class="edit-form">
+                        <div class="post-edit-form">
+                            <textarea name="content" id="content" class="content" placeholder="What's happening?">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nam voluptas, eaque provident corrupti blanditiis quisquam excepturi laborum quod sequi consequatur repellat eum, nostrum quibusdam consectetur magni ad fugiat magnam, labore amet explicabo. Vitae, illum et sed praesentium nesciunt voluptates.</textarea>
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn" type="button">Update</button>
+                            <button class="btn" type="button">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOGIN  -->
+        <section class="auth-container">
+            <form class="auth-form">
+                <h2>Enter Your Account</h2>
+                <div class="error-message">Error: Your password is not correct</div>
+                <input type="email" name="email" required placeholder="Email" />
+                <input type="password" name="password" required placeholder="Password" />
+                <button class="btn" type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- REGISTER -->
+        <section class="auth-container">
+            <form class="auth-form">
+                <h2>Register New Account</h2>
+                <div class="error-message">Error: Your password is not correct</div>
+                <input type="text" name="name" required placeholder="Name" />
+                <input type="email" name="email" required placeholder="Email" />
+                <input type="password" name="password" required placeholder="Password" />
+                <button class="btn" type="submit">Register</button>
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>
