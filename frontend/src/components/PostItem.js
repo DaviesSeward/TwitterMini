@@ -16,7 +16,7 @@ const PostItem = ({ post }) => {
             const token = localStorage.getItem("token");
             const option = {
                 method: "put",
-                url: `/api/posts/${post._id}`,
+                url: `https://mighty-dusk-05196.herokuapp.com/api/posts/${post._id}`,
                 data: postToEdit,
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -34,7 +34,7 @@ const PostItem = ({ post }) => {
             const token = localStorage.getItem("token");
             const option = {
                 method: "delete",
-                url: `/api/posts/${post._id}`,
+                url: `https://mighty-dusk-05196.herokuapp.com/api/posts/${post._id}`,
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

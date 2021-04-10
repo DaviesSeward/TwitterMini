@@ -18,7 +18,7 @@ const Register = () => {
     const onSubmitHandle = async (e) => {
         try {
             e.preventDefault();
-            const option = { method: "post", url: "/api/auth/register", data: userInput }
+            const option = { method: "post", url: "https://mighty-dusk-05196.herokuapp.com/api/auth/register", data: userInput }
             const response = await axios(option);
             const { token, userName } = response.data.data;
             localStorage.setItem("token", token);

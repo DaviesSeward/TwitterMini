@@ -15,7 +15,7 @@ const Form = () => {
             const token = localStorage.getItem("token");
             const option = {
                 method: "post",
-                url: "/api/posts",
+                url: "https://mighty-dusk-05196.herokuapp.com/api/posts",
                 data: postInput,
                 headers: {
                     Authorization: `Bearer ${token}`
